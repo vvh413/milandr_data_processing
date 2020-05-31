@@ -1,0 +1,13 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\fft.o"
+".\objects\startup_mdr32f9qx.o"
+".\objects\system_mdr32f9qx.o"
+".\objects\mdr32f9qx_rst_clk.o"
+".\objects\mdr32f9qx_usb.o"
+".\objects\mdr32f9qx_usb_cdc.o"
+".\objects\mdr32f9qx_usb_device.o"
+--strict --scatter ".\Objects\1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\1.map" -o .\Objects\1.axf

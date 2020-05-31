@@ -1,0 +1,11 @@
+.\objects\lcd.o: lib\lcd.c
+.\objects\lcd.o: .\include\lcd.h
+.\objects\lcd.o: .\include\1986VE9x.h
+.\objects\lcd.o: C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\objects\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lcd.o: C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport\core_cmInstr.h
+.\objects\lcd.o: C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport\core_cmFunc.h
+.\objects\lcd.o: .\RTE\Device\MDR1986BE92\system_MDR32F9Qx.h
+.\objects\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lcd.o: .\include\font.h

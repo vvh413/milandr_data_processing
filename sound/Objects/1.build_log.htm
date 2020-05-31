@@ -1,0 +1,102 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.1
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: in valid, vvh413, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.26.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+Z:\Milandr\_projects\sound\sound.uvprojx
+Project File Date:  05/29/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_MDR32F9Qx.s...
+compiling fft.c...
+.\include\fft.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+lib\fft.c: 1 warning, 0 errors
+compiling system_MDR32F9Qx.c...
+compiling MDR32F9Qx_usb_CDC.c...
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\src\USB_Library\MDR32F9Qx_usb_CDC.c(479): warning:  #177-D: variable "wValue"  was declared but never referenced
+    uint16_t wValue = USB_CurrentSetupPacket.wValue,
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\src\USB_Library\MDR32F9Qx_usb_CDC.c: 1 warning, 0 errors
+compiling MDR32F9Qx_rst_clk.c...
+compiling MDR32F9Qx_usb.c...
+compiling MDR32F9Qx_usb_device.c...
+compiling main.c...
+.\include\fft.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c(55): warning:  #550-D: variable "result"  was set but never used
+  	USB_Result result;
+main.c: 2 warnings, 0 errors
+linking...
+.\Objects\1.axf: error: L6031U: Could not open scatter description file .\Objects\1.sct: No such file or directory
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning, 0 error and 1 fatal error messages.
+".\Objects\1.axf" - 1 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.MDR1986BExx.1.5.pack
+                Keil.MDR1986BExx.1.5
+                Milandr MDR1986BExx Series Device Support, Drivers and Examples
+   * Component: USB Version: 1.5
+   * Component: USB Library Version: 1.5
+   * Component: RST_CLK Version: 1.5
+   * Component: Startup Version: 1.5
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MDR1986BE92
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Config
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\CoreSupport
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\inc
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\1.5\Libraries\MDR32F9Qx_StdPeriph_Driver\inc\USB_Library
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Drivers:USB:1.5
+      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_usb.c
+      Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_usb.h
+
+   * Component: Keil::Drivers:USB Library:1.5
+      Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\USB_Library\MDR32F9Qx_usb_device.h
+      Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\USB_Library\MDR32F9Qx_usb_CDC.h
+      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\USB_Library\MDR32F9Qx_usb_CDC.c
+      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\USB_Library\MDR32F9Qx_usb_device.c
+
+   * Component: Keil::Drivers:RST_CLK:1.5
+      Include file:  Libraries\MDR32F9Qx_StdPeriph_Driver\inc\MDR32F9Qx_rst_clk.h
+      Source file:   Libraries\MDR32F9Qx_StdPeriph_Driver\src\MDR32F9Qx_rst_clk.c
+
+   * Component: Keil::Device:Startup:1.5
+      Source file:   Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.c
+      Include file:  Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+      Include file:  Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\system_MDR32F9Qx.h
+      Source file:   Libraries\CMSIS\CM3\DeviceSupport\MDR32F9Qx\startup\arm\startup_MDR32F9Qx.s
+      Include file:  Config\MDR32F9Qx_config.h
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
